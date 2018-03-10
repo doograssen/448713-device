@@ -17,12 +17,12 @@
       <button class="seek-form__button">Найти</button>
     </form>
     <div class="customer-nav__user person">
-      <a href="" class="person__log-in">Валентин Петухов</a>
-      <a href="" class="person__log-in">Выйти</a>
+      <a href="#" class="person__log-in">Валентин Петухов</a>
+      <a href="#" class="person__log-in">Выйти</a>
     </div>
     <div class="customer-nav__purchases goods">
-      <button class="goods__matching">Сравнить</button>
-      <a href="" class="goods__cart">Корзина</a>
+      <a class="goods__matching">Сравнить</a>
+      <a href="#" class="goods__cart">Корзина</a>
     </div>
   </div>
   <nav class="page-header__nav main-nav">
@@ -33,54 +33,48 @@
       <li class="main-nav__item">
         <ul class="main-nav__services service-nav">
           <li class="service-nav__item">
-            <a href="" class="service-nav__link">Доставка</a>
+            <a href="#" class="service-nav__link">Доставка</a>
           </li>
           <li class="service-nav__item">
-            <a href="" class="service-nav__link">Гарантия</a>
+            <a href="#" class="service-nav__link">Гарантия</a>
           </li>
           <li class="service-nav__item">
-            <a href="" class="service-nav__link">Контакты</a>
+            <a href="#" class="service-nav__link">Контакты</a>
           </li>
         </ul>
       </li>
     </ul>
     <div class="main-nav__menu dropdown">
-      <ul class="dropdown__categories">
-        <li class="dropdown__item">
-          <ul class="dropdown__list category">
-            <li class="category__item">
-              <a href="" class="category__link">Виртуальная реальность</a>
-            </li>
-            <li class="category__item">
-              <a href="" class="category__link">Моноподы для селфи</a>
-            </li>
-            <li class="category__item">
-              <a href="" class="category__link">Экшн-камеры</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="dropdown__categories">
-        <li class="dropdown__item">
-          <ul class="dropdown__list category">
-            <li class="category__item">
-              <a href="" class="category__link">Фитнес браслеты</a>
-            </li>
-            <li class="category__item">
-              <a href="" class="category__link">Умные часы</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="dropdown__categories">
-        <li class="dropdown__item">
-          <ul class="dropdown__list category">
-            <li class="category__item">
-              <a href="" class="category__link">Квадракоптеры</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <div class="dropdown__block">
+        <ul class="dropdown__list category">
+          <li class="category__item">
+            <a href="#" class="category__link">Виртуальная реальность</a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">Моноподы для селфи</a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">Экшн-камеры</a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown__block">
+        <ul class="dropdown__list category">
+          <li class="category__item">
+            <a href="#" class="category__link">Фитнес браслеты</a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">Умные часы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown__block">
+        <ul class="dropdown__list category">
+          <li class="category__item">
+            <a href="#" class="category__link">Квадракоптеры</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>
@@ -103,7 +97,7 @@
           <div class="filter__range range">
             <div class="range__coast range__coast--min">
               <span class="range__handler range__handler--min" tabindex="0">*</span>
-              <span class="range__value" >от 0</span>
+              <span class="range__value">от 0</span>
             </div>
             <div class="range__coast range__coast--max">
               <span class="range__handler" tabindex="0">*</span>
@@ -143,14 +137,14 @@
           <li class="sort__item"><a href="#" class="sort__type">По популярности</a></li>
         </ul>
         <div class="sort__direction direct">
-          <a href="#" class="direct__asc">По возрастанию</a>
-          <a href="#" class="direct__desc">По убыванию</a>
+          <a href="#" class="direct__item direct__element--asc">По возрастанию</a>
+          <a href="#" class="direct__item direct__element--asc">По убыванию</a>
         </div>
       </div>
       <ul class="catalog__container goods-set">
         <li class="goods-set__item card">
           <div class="card__container">
-            <img src="http://placehold.it/544x380" alt="Селфи-палка" class="card__image">
+            <img src="img/item-1.jpg" alt="Селфи-палка" class="card__image" width="360" height="380">
             <a href="#" class="card__action card__action--cart button">В корзину</a>
             <a href="#" class="card__action card__action--match button">Добавить к сравнению</a>
           </div>
@@ -159,7 +153,7 @@
         </li>
         <li class="goods-set__item card">
           <div class="card__container">
-            <img src="http://placehold.it/544x380" alt="Профессиональная селфи-палка" class="card__image">
+            <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" class="card__image" width="360" height="380">
             <a href="#" class="card__action card__action--cart button">В корзину</a>
             <a href="#" class="card__action card__action--match button">Добавить к сравнению</a>
           </div>
@@ -168,7 +162,7 @@
         </li>
         <li class="goods-set__item card">
           <div class="card__container">
-            <img src="http://placehold.it/544x380" alt="Непотопляемая селфи-палка" class="card__image">
+            <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" class="card__image" width="360" height="380">
             <a href="#" class="card__action card__action--cart button">В корзину</a>
             <a href="#" class="card__action card__action--match button">Добавить к сравнению</a>
           </div>
@@ -176,9 +170,9 @@
           <span class="card__cost">2500 руб.</span>
         </li>
         <li class="goods-set__item card">
-          <div class="card__container">
-            <img src="http://placehold.it/544x380" alt="Селфи-палка &laquo;Следуй за мной&raquo;" class="card__image">
-            <span class="card__mark">new</span>
+          <div class="card__container card__container--new">
+            <img src="img/item-4.jpg" alt="Селфи-палка &laquo;Следуй за мной&raquo;" class="card__image" width="360"
+                 height="380">
             <a href="#" class="card__action card__action--cart button">В корзину</a>
             <a href="#" class="card__action card__action--match button">Добавить к сравнению</a>
           </div>
@@ -189,7 +183,7 @@
       <ul class="catalog__pagination pagination">
         <li class="pagination__item"><a href="#" class="pagination__page pagination__page--prev">Назад</a></li>
         <li class="pagination__item">
-          <div class="pagination__page pagination__page--active">1</div>
+          <span class="pagination__page pagination__page--active">1</span>
         </li>
         <li class="pagination__item"><a href="#" class="pagination__page">2</a></li>
         <li class="pagination__item"><a href="#" class="pagination__page">3</a></li>
@@ -200,14 +194,14 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__top">
-    <a href="#" class="page-footer__logo">device</a>
+    <a href="index.html" class="page-footer__logo">device</a>
     <div class="page-footer__nav customer-nav">
       <div class="customer-nav__user person">
-        <a href="" class="person__log-in">Выйти</a>
+        <a href="#" class="person__log-in">Выйти</a>
       </div>
       <div class="customer-nav__purchases goods">
-        <button class="goods__matching">Сравнить</button>
-        <a href="" class="goods__cart">Корзина</a>
+        <a href="#" class="goods__matching">Сравнить</a>
+        <a href="#" class="goods__cart">Корзина</a>
       </div>
     </div>
   </div>
@@ -215,13 +209,13 @@
     <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>
     <ul class="page-footer__services service-nav">
       <li class="service-nav__item">
-        <a href="" class="service-nav__link">Доставка</a>
+        <a href="#" class="service-nav__link">Доставка</a>
       </li>
       <li class="service-nav__item">
-        <a href="" class="service-nav__link">Гарантия</a>
+        <a href="#" class="service-nav__link">Гарантия</a>
       </li>
       <li class="service-nav__item">
-        <a href="" class="service-nav__link">Контакты</a>
+        <a href="#" class="service-nav__link">Контакты</a>
       </li>
     </ul>
     <p class="page-footer__phone">Тел.: +7 (495) 495-95-95</p>
