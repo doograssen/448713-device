@@ -3,41 +3,42 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
   <h1 class="page-header__title visually-hidden">Интернет-магазин технологичных девайсов</h1>
-  <a href="index.html" class="page-header__logo">device</a>
+  <a class="page-header__logo" href="index.html" >device</a>
   <div class="page-header__nav customer-nav">
-    <form action="https://echo.htmlacademy.ru" method="post" class="customer-nav__search seek-form">
+    <form class="customer-nav__search seek-form" action="https://echo.htmlacademy.ru" method="post">
       <label class="seek-form__label visually-hidden" for="search_input">Поиск по сайту</label>
-      <input type="text" class="seek-form__input" id="search_input" name="subject">
-      <button type="submit" class="seek-form__button">Найти</button>
+      <input class="seek-form__input" type="text" id="search_input" name="subject" placeholder="Поиск по сайту">
+      <button class="seek-form__button" type="submit">Найти</button>
     </form>
     <div class="customer-nav__user person">
-      <a href="#" class="person__log-in">Войти</a>
+      <a  class="person__log-in" href="#">Войти</a>
     </div>
     <div class="customer-nav__purchases goods">
-      <a href="#" class="goods__matching">Сравнить</a>
-      <a href="#" class="goods__cart">Корзина</a>
+      <a class="goods__matching" href="#">Сравнить</a>
+      <a class="goods__cart" href="#">Корзина</a>
     </div>
   </div>
   <nav class="page-header__nav main-nav">
     <ul class="main-nav__list">
       <li class="main-nav__item">
-        <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
+        <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
       </li>
       <li class="main-nav__item">
         <ul class="main-nav__services service-nav">
           <li class="service-nav__item">
-            <a href="#" class="service-nav__link">Доставка</a>
+            <a class="service-nav__link" href="#">Доставка</a>
           </li>
           <li class="service-nav__item">
-            <a href="#" class="service-nav__link">Гарантия</a>
+            <a class="service-nav__link" href="#">Гарантия</a>
           </li>
           <li class="service-nav__item">
-            <a href="#" class="service-nav__link">Контакты</a>
+            <a class="service-nav__link" href="#">Контакты</a>
           </li>
         </ul>
       </li>
@@ -46,30 +47,30 @@
       <div class="dropdown__block">
         <ul class="dropdown__list category">
           <li class="category__item">
-            <a href="#" class="category__link">Виртуальная реальность</a>
+            <a class="category__link" href="#">Виртуальная реальность</a>
           </li>
           <li class="category__item">
-            <a href="#" class="category__link">Моноподы для селфи</a>
+            <a class="category__link" href="#">Моноподы для селфи</a>
           </li>
           <li class="category__item">
-            <a href="#" class="category__link">Экшн-камеры</a>
-          </li>
-        </ul>
-      </div>
-      <div class="dropdown__block">
-        <ul class="dropdown__list category">
-          <li class="category__item">
-            <a href="#" class="category__link">Фитнес браслеты</a>
-          </li>
-          <li class="category__item">
-            <a href="#" class="category__link">Умные часы</a>
+            <a class="category__link" href="#">Экшн-камеры</a>
           </li>
         </ul>
       </div>
       <div class="dropdown__block">
         <ul class="dropdown__list category">
           <li class="category__item">
-            <a href="#" class="category__link">Квадракоптеры</a>
+            <a class="category__link" href="#">Фитнес браслеты</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link" href="#">Умные часы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown__block">
+        <ul class="dropdown__list category">
+          <li class="category__item">
+            <a class="category__link" href="#">Квадракоптеры</a>
           </li>
         </ul>
       </div>
@@ -85,17 +86,17 @@
           <div class="slider__slide slide">
             <h3 class="slide__title visually-hidden">Селфи-палка</h3>
             <span class="slide__number">01</span>
-            <img src="img/slider-1.png" alt="Селфи-палки" class="slide__image" width="384" height="486">
+            <img class="slide__image" src="img/slider-1.png" alt="Селфи-палки" width="384" height="486">
             <div class="slide__promo">
               <p class="slide__slogan">Делай селфи, как Бен Стиллер</p>
               <p class="slide__description">Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a href="#" class="slide__link button">Подробнее</a>
+              <a class="slide__link button" href="#">Подробнее</a>
               <table class="slide__properties parameters">
                 <tbody>
                 <tr>
-                  <td class="parameters__value">8.5 м</td>
-                  <td class="parameters__value">5 кг</td>
+                  <td class="parameters__value">8.5м</td>
+                  <td class="parameters__value">5кг</td>
                   <td class="parameters__value">Карбон</td>
                 </tr>
                 <tr>
@@ -112,12 +113,12 @@
           <div class="slider__slide slide">
             <h3 class="slide__title visually-hidden">Фитнес-браслет</h3>
             <span class="slide__number">02</span>
-            <img src="img/slider-2.png" alt="Браслет" class="slide__image" width="345" height="485">
+            <img class="slide__image" src="img/slider-2.png" alt="Браслет" width="345" height="485">
             <div class="slide__promo">
               <p class="slide__slogan">Худеем правильно!</p>
               <p class="slide__description">Мотивирующие фитнес-браслеты помогут найти в себе силы
                 не пропускать занятия и соблюдать диету.</p>
-              <a href="#" class="slide__link button">Подробнее</a>
+              <a class="slide__link button" href="#">Подробнее</a>
               <table class="slide__properties parameters">
                 <tbody>
                 <tr>
@@ -135,12 +136,12 @@
           <div class="slider__slide slide">
             <h3 class="slide__title visually-hidden">Квадракоптер</h3>
             <span class="slide__number">03</span>
-            <img src="img/slider-3.png" alt="Квадракоптер" class="slide__image" width="526" height="334">
+            <img class="slide__image" src="img/slider-3.png" alt="Квадракоптер" width="526" height="334">
             <div class="slide__promo">
               <p class="slide__slogan">Порхает как бабочка, жалит как пчела!</p>
               <p class="slide__description">Этот обычный, на первый взгляд, квадрокоптер оснащен
                 мощным лазером, замаскированным под стандартную камеру.</p>
-              <a href="#" class="slide__link button">Побробнее</a>
+              <a class="slide__link button" href="#">Побробнее</a>
               <table class="slide__properties parameters">
                 <tbody>
                 <tr>
@@ -159,9 +160,9 @@
       </ul>
     </div>
     <div class="slider__controls control">
-      <input type="radio" class="control__radio visually-hidden" id="first-slide" name="radio-group">
-      <input type="radio" class="control__radio visually-hidden" id="second-slide" name="radio-group">
-      <input type="radio" class="control__radio visually-hidden" id="third-slide" name="radio-group">
+      <input class="control__radio visually-hidden" type="radio" id="first-slide" name="radio-group">
+      <input class="control__radio visually-hidden" type="radio" id="second-slide" name="radio-group">
+      <input class="control__radio visually-hidden" type="radio" id="third-slide" name="radio-group">
       <label class="control__toggle invisible" for="first-slide" tabindex="0">Первый слайд</label>
       <label class="control__toggle invisible" for="second-slide" tabindex="0">Второй слайд</label>
       <label class="control__toggle invisible" for="third-slide" tabindex="0">Третий слайд</label>
@@ -171,38 +172,38 @@
     <h2 class="popular-goods__title visually-hidden">Популярные товары</h2>
     <ul class="popular-goods__list">
       <li class="popular-goods__item product-group">
-        <a href="#" class="product-group__link">
-          <img src="img/popular-1.svg" alt="Очки" class="product-group__image">
+        <a class="product-group__link" href="#">
+          <img class="product-group__image" src="img/popular-1.svg" alt="Очки">
           <p class="product-group__name">Виртуальная реальность</p>
         </a>
       </li>
       <li class="popular-goods__item product-group">
-        <a href="#" class="product-group__link">
-          <img src="img/popular-2.svg" alt="Монопод" class="product-group__image">
+        <a class="product-group__link" href="#">
+          <img class="product-group__image" src="img/popular-2.svg" alt="Монопод">
           <p class="product-group__name">Моноподы для селфи</p>
         </a>
       </li>
       <li class="popular-goods__item product-group">
-        <a href="#" class="product-group__link">
-          <img src="img/popular-3.svg" alt="Камера" class="product-group__image">
+        <a class="product-group__link" href="#">
+          <img class="product-group__image" src="img/popular-3.svg" alt="Камера">
           <p class="product-group__name">Экшн-камеры</p>
         </a>
       </li>
       <li class="popular-goods__item product-group">
-        <a href="#" class="product-group__link">
-          <img src="img/popular-4.svg" alt="Браслет" class="product-group__image">
+        <a class="product-group__link" href="#">
+          <img class="product-group__image" src="img/popular-4.svg" alt="Браслет">
           <p class="product-group__name">Фитнес браслеты</p>
         </a>
       </li>
       <li class="popular-goods__item product-group">
-        <a href="#" class="product-group__link">
-          <img src="img/popular-5.svg" alt="Часы" class="product-group__image">
+        <a class="product-group__link" href="#">
+          <img class="product-group__image" src="img/popular-5.svg" alt="Часы">
           <p class="product-group__name">Умные часы</p>
         </a>
       </li>
       <li class="popular-goods__item product-group">
-        <a href="#" class="product-group__link">
-          <img src="img/poppular-6.svg" alt="Квадракоптер" class="product-group__image">
+        <a class="product-group__link" href="#">
+          <img class="product-group__image" src="img/poppular-6.svg" alt="Квадракоптер">
           <p class="product-group__name">Квадракоптер</p>
         </a>
       </li>
@@ -210,13 +211,13 @@
   </section>
   <section class="page-main__section services">
     <h2 class="services__title visually-hidden">Наши сервисы</h2>
-    <input type="radio" class="services__radio visually-hidden" id="delivery" name="service-group">
-    <input type="radio" class="services__radio visually-hidden" id="warranty" name="service-group">
-    <input type="radio" class="services__radio visually-hidden" id="credit" name="service-group">
+    <input class="services__radio visually-hidden" type="radio" id="delivery" name="service-group">
+    <input class="services__radio visually-hidden" type="radio" id="warranty" name="service-group">
+    <input class="services__radio visually-hidden" type="radio" id="credit" name="service-group">
     <ul class="services__list">
-      <li class="services__item"><label for="delivery" class="services__label button" tabindex="0">Доставка</label></li>
-      <li class="services__item"><label for="warranty" class="services__label button" tabindex="0">Гарантия</label></li>
-      <li class="services__item"><label for="credit" class="services__label button" tabindex="0">Кредит</label></li>
+      <li class="services__item button"><label class="services__label" for="delivery" tabindex="0">Доставка</label></li>
+      <li class="services__item button"><label class="services__label" for="warranty" tabindex="0">Гарантия</label></li>
+      <li class="services__item button"><label class="services__label" for="credit" tabindex="0">Кредит</label></li>
     </ul>
     <div class="services__container">
       <div class="services__feature feature">
@@ -242,23 +243,23 @@
     <h2 class="brands__title visually-hidden">Популярные бренды</h2>
     <ul class="brands__list">
       <li class="brands__item">
-        <a href="#" class="brands__link">
-          <img src="img/logo-1.jpg" alt="logo-1" width="260" height="100" class="brands__logotype">
+        <a class="brands__link" href="#">
+          <img class="brands__logotype" src="img/logo-1.jpg" alt="logo-1" width="260" height="100">
         </a>
       </li>
       <li class="brands__item">
-        <a href="#" class="brands__link">
-          <img src="img/logo-2.jpg" alt="logo-2" width="260" height="100" class="brands__logotype">
+        <a class="brands__link" href="#">
+          <img class="brands__logotype" src="img/logo-2.jpg" alt="logo-2" width="260" height="100">
         </a>
       </li>
       <li class="brands__item">
-        <a href="#" class="brands__link">
-          <img src="img/logo-3.jpg" alt="logo-3" width="260" height="100" class="brands__logotype">
+        <a class="brands__link" href="#">
+          <img class="brands__logotype" src="img/logo-3.jpg" alt="logo-3" width="260" height="100">
         </a>
       </li>
       <li class="brands__item">
-        <a href="#" class="brands__link">
-          <img src="img/logo-4.jpg" alt="logo-4" width="260" height="100" class="brands__logotype">
+        <a class="brands__link" href="#">
+          <img class="brands__logotype" src="img/logo-4.jpg" alt="logo-4" width="260" height="100">
         </a>
       </li>
     </ul>
@@ -275,27 +276,27 @@
         <li class="about__item">Автотрейдинг</li>
         <li class="about__item">ЖелДорЭкспедиция</li>
       </ul>
-      <a href="#" class="about__link button">Подробнее о нас</a>
+      <a class="about__link button" href="#">Подробнее о нас</a>
     </div>
     <div class="company__promo about">
       <h3 class="about__title">Контакты</h3>
       <p class="about__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
         работоспособность покупки. Всякое бывает.</p>
-      <a href="#" class="about__map"><img src="img/map.png" alt="Карта" width="560" height="222"></a>
-      <a href="#" class="about__link button">Напишите нам</a>
+      <a class="about__map" href="#"><img src="img/map.png" alt="Карта" width="560" height="222"></a>
+      <a class="about__link button" href="#">Напишите нам</a>
     </div>
   </section>
 </main>
 <footer class="page-footer">
   <div class="page-footer__top">
-    <a href="index.html" class="page-footer__logo">device</a>
+    <a class="page-footer__logo" href="index.html">device</a>
     <div class="page-footer__nav customer-nav">
       <div class="customer-nav__user person">
-        <a href="#" class="person__log-in">Войти</a>
+        <a class="person__log-in" href="#">Войти</a>
       </div>
       <div class="customer-nav__purchases goods">
-        <a href="#" class="goods__matching">Сравнить</a>
-        <a href="#" class="goods__cart">Корзина</a>
+        <a class="goods__matching" href="#">Сравнить</a>
+        <a class="goods__cart" href="#">Корзина</a>
       </div>
     </div>
   </div>
@@ -303,50 +304,53 @@
     <p class="page-footer__address">г. Москва, ул. Строителей, 15</p>
     <ul class="page-footer__services service-nav">
       <li class="service-nav__item">
-        <a href="#" class="service-nav__link">Доставка</a>
+        <a class="service-nav__link" href="#">Доставка</a>
       </li>
       <li class="service-nav__item">
-        <a href="#" class="service-nav__link">Гарантия</a>
+        <a class="service-nav__link" href="#">Гарантия</a>
       </li>
       <li class="service-nav__item">
-        <a href="#" class="service-nav__link">Контакты</a>
+        <a class="service-nav__link" href="#">Контакты</a>
       </li>
     </ul>
     <p class="page-footer__phone">Тел.: +7 (495) 495-95-95</p>
   </div>
   <div class="page-footer__bottom">
     <ul class="page-footer__links socials">
-      <li class="socials__item"><a href="https://www.facebook.com/" class="socials__link socials__link--facebook invisible">facebook</a>
+      <li class="socials__item">
+        <a class="socials__link socials__link--facebook invisible" href="https://www.facebook.com/">facebook</a>
       </li>
-      <li class="socials__item"><a href="https://www.instagram.com/" class="socials__link socials__link--instagram invisible">instagram</a>
+      <li class="socials__item">
+        <a class="socials__link socials__link--instagram invisible" href="https://www.instagram.com/">instagram</a>
       </li>
-      <li class="socials__item"><a href="https://twitter.com/" class="socials__link socials__link--twitter invisible">twitter</a>
+      <li class="socials__item">
+        <a class="socials__link socials__link--twitter invisible" href="https://twitter.com/">twitter</a>
       </li>
     </ul>
-    <a href="https://up.htmlacademy.ru/htmlcss/20" class="page-footer__site-developer invisible">HTMLAcademy</a></div>
+    <a class="page-footer__site-developer invisible" href="https://up.htmlacademy.ru/htmlcss/20">HTMLAcademy</a></div>
 </footer>
 <div class="modal">
   <button class="modal__close invisible">Закрыть</button>
-  <form action="https://echo.htmlacademy.ru" method="post" class="modal__form feedback">
+  <form class="modal__form feedback" action="https://echo.htmlacademy.ru" method="post">
     <p class="feedback__data">
-      <label for="name" class="feedback__label">Ваше имя:</label>
-      <input type="text" class="feedback__input" id="name" name="user-name">
+      <label class="feedback__label" for="name">Ваше имя:</label>
+      <input class="feedback__input" type="text" id="name" name="user-name" placeholder="Представьтесь, пожалуйста">
     </p>
     <p class="feedback__data">
-      <label for="e-mail" class="feedback__label">Ваш e-mail:</label>
-      <input type="text" class="feedback__input" id="e-mail" name="user-mail">
+      <label class="feedback__label" for="e-mail">Ваш e-mail:</label>
+      <input class="feedback__input" type="text" id="e-mail" name="user-mail" placeholder="Для отправки ответа">
     </p>
     <p class="feedback__data">
-      <label for="feedback" class="feedback__label">Текст письма:</label>
-      <textarea class="feedback__text" id="feedback" name="user-feedback" cols="30" rows="10"></textarea>
+      <label class="feedback__label" for="feedback">Текст письма:</label>
+      <textarea class="feedback__text" id="feedback" name="user-feedback" cols="30" rows="10" placeholder="В свободной форме"></textarea>
     </p>
-    <a href="#" class="feedback__submit button">Отправить</a>
+    <a class="feedback__submit button" href="#">Отправить</a>
   </form>
 </div>
 <div class="modal">
   <button class="modal__close invisible">Закрыть</button>
-  <a href="#" class="modal__map">
-    <img src="img/map-big.jpg" alt="Карта" class="modal__link">
+  <a class="modal__map" href="#">
+    <img class="modal__link" src="img/map-big.jpg" alt="Карта">
   </a>
 </div>
 </body>
