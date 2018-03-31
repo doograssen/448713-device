@@ -488,7 +488,8 @@
 }
 
 .catalog__section {
-  width: 852px;
+  -ms-flex-preferred-size: 852px;
+  flex-basis: 852px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -webkit-box-flex: 1;
@@ -576,11 +577,13 @@
 /* ---- filter ---- */
 
 .filter {
-  width: 348px;
-  -ms-flex-negative: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-basis: 348px;
   flex-shrink: 0;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   background-color: #eeeeee;
 }
@@ -590,18 +593,20 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.22em;
+  width: 100%;
   margin: 0;
   margin-bottom: 69px;
   padding-top: 25px;
   padding-bottom: 26px;
-  padding-left: calc(100% - 268px);
+  padding-right: 176px;
   text-transform: uppercase;
+  text-align: right;
   background-color: #dcdcdc;
 }
 
 .filter__form {
-  padding-left: calc(100% - 269px);
-  width: 200px;
+  width: 201px;
+  padding-right: 68px;
 }
 
 input[disabled] + .filter__label {
@@ -858,6 +863,7 @@ input[disabled] + .filter__label {
   height: 60px;
   padding-top: 21px;
   padding-left: 13px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -1860,7 +1866,11 @@ input[disabled] + .filter__label {
 .modal--show {
   top: 50%;
   z-index: 10;
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
   transition-delay: 1s;
+  -webkit-transition: z-index 0s, top 0.6s;
+  -o-transition: z-index 0s, top 0.6s;
   transition: z-index 0s, top 0.6s;
 }
 
