@@ -12,18 +12,17 @@
     <h1 class="page-header__title visually-hidden">Интернет-магазин технологичных девайсов</h1>
     <a class="page-header__logo" href="index.html">device</a>
     <div class="page-header__nav customer-nav">
-      <form class="customer-nav__search seek-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="customer-nav__search seek-form" tabindex="0" action="https://echo.htmlacademy.ru" method="post">
         <label class="seek-form__label visually-hidden" for="search_input">Поиск по сайту</label>
         <input class="seek-form__input" type="text" id="search_input" name="subject" placeholder="Поиск по сайту">
         <button class="seek-form__button" type="submit">Найти</button>
       </form>
       <div class="customer-nav__user person">
-        <a class="person__log-in" href="#">Валентин Петухов</a>
         <a class="person__log-in" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12">
             <path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543 1.008-.611 1.687-1.707 1.687-2.972C9.985 1.561 8.425 0 6.5 0S3.015 1.561 3.015 3.485c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
-          </svg>
-          Выйти</a>
+          </svg> Валентин Петухов</a>
+        <a class="person__log-in" href="#">Выйти</a>
       </div>
       <div class="customer-nav__purchases goods">
         <a class="goods__matching" href="#">
@@ -99,7 +98,7 @@
     <ul class="page-main__breadcrumbs breadcrumbs">
       <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
       <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог товаров</a></li>
-      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Моноподы для селфи</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Моноподы для селфи</a></li>
     </ul>
   </header>
   <section class="page-main__section catalog">
@@ -110,13 +109,13 @@
         <fieldset class="filter__section">
           <legend class="filter__name">Стоимость</legend>
           <div class="filter__range range">
-            <div class="range__coast range__coast--min">
+            <div class="range__cost range__cost--min">
               <span class="range__handler invisible" tabindex="0">&bull;</span>
               <span class="range__value">от 0</span>
               <label class="range__lable visually-hidden" for="mincost">Минимальная цена</label>
               <input class="range__input visually-hidden" id="mincost" name="mincost" value="0">
             </div>
-            <div class="range__coast range__coast--max">
+            <div class="range__cost range__cost--max">
               <span class="range__handler invisible" tabindex="0">&bull;</span>
               <span class="range__value">до 5000</span>
               <label class="range__lable visually-hidden" for="maxcost">Минимальная цена</label>
@@ -126,23 +125,23 @@
         </fieldset>
         <fieldset class="filter__section">
           <legend class="filter__name">Цвет</legend>
-          <input class="filter__checkbox visually-hidden" id="col1" name="color" type="checkbox" checked>
-          <label class="filter__label" for="col1" tabindex="0">Черный</label>
-          <input class="filter__checkbox visually-hidden" id="col2" name="color" type="checkbox">
-          <label class="filter__label" for="col2" tabindex="0">Белый</label>
-          <input class="filter__checkbox visually-hidden" id="col3" name="color" type="checkbox" checked>
-          <label class="filter__label" for="col3" tabindex="0">Синий</label>
-          <input class="filter__checkbox visually-hidden" id="col4" name="color" type="checkbox" checked>
-          <label class="filter__label" for="col4" tabindex="0">Красный</label>
-          <input class="filter__checkbox visually-hidden" id="col5" name="color" type="checkbox">
-          <label class="filter__label" for="col5" tabindex="0">Розовый</label>
+          <input class="filter__checkbox visually-hidden" id="col1" name="color" type="checkbox" tabindex="0" checked>
+          <label class="filter__label" for="col1" >Черный</label>
+          <input class="filter__checkbox visually-hidden" id="col2" name="color" type="checkbox" tabindex="0">
+          <label class="filter__label" for="col2">Белый</label>
+          <input class="filter__checkbox visually-hidden" id="col3" name="color" type="checkbox"  tabindex="0" checked>
+          <label class="filter__label" for="col3">Синий</label>
+          <input class="filter__checkbox visually-hidden" id="col4" name="color" type="checkbox" tabindex="0" checked>
+          <label class="filter__label" for="col4">Красный</label>
+          <input class="filter__checkbox visually-hidden" id="col5" name="color" type="checkbox" tabindex="0">
+          <label class="filter__label" for="col5">Розовый</label>
         </fieldset>
         <fieldset class="filter__section">
           <legend class="filter__name">Bluetooth</legend>
-          <input class="filter__radio visually-hidden" id="bt-true" type="radio"  name="bluetoth">
-          <label class="filter__label" for="bt-true" tabindex="0">Есть</label>
-          <input class="filter__radio visually-hidden" id="bt-false" type="radio" name="bluetoth">
-          <label class="filter__label" for="bt-false" tabindex="0">Нет</label>
+          <input class="filter__radio visually-hidden" id="bt-true" type="radio" name="bluetoth" tabindex="0">
+          <label class="filter__label" for="bt-true">Есть</label>
+          <input class="filter__radio visually-hidden" id="bt-false" type="radio" name="bluetoth" tabindex="0">
+          <label class="filter__label" for="bt-false">Нет</label>
         </fieldset>
         <button class="filter__submit button">Показать</button>
       </form>
@@ -156,16 +155,18 @@
           <li class="sort__item"><a class="sort__type" href="#">По популярности</a></li>
         </ul>
         <div class="sort__direction direct">
-          <a class="direct__item direct__element--active invisible" href="#">По возрастанию</a>
-          <a class="direct__item direct__element invisible" href="#">По убыванию</a>
+          <a class="direct__item invisible" href="#">По возрастанию</a>
+          <a class="direct__item direct__item--active invisible">По убыванию</a>
         </div>
       </div>
       <ul class="catalog__container goods-set">
         <li class="goods-set__item card">
           <div class="card__container">
             <img class="card__image" src="img/item-1.jpg" alt="Селфи-палка" width="360" height="380">
-            <a class="card__action card__action--cart button" href="#">В корзину</a>
-            <a class="card__action card__action--match button" href="#">Добавить к сравнению</a>
+            <div class="card__controls">
+              <a class="card__action button" href="#">В корзину</a>
+              <a class="card__action card__action--match" href="#">Добавить к сравнению</a>
+            </div>
           </div>
           <h3 class="card__name">Любительская селфи-палка</h3>
           <span class="card__cost">500 руб.</span>
@@ -173,41 +174,47 @@
         <li class="goods-set__item card">
           <div class="card__container">
             <img class="card__image" src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-            <a class="card__action card__action--cart button" href="#">В корзину</a>
-            <a class="card__action card__action--match button" href="#">Добавить к сравнению</a>
+            <div class="card__controls">
+              <a class="card__action button" href="#">В корзину</a>
+              <a class="card__action card__action--match" href="#">Добавить к сравнению</a>
+            </div>
           </div>
           <h3 class="card__name">Профессиональная селфи-палка</h3>
-          <span class="card__cost">1500 руб.</span>
+          <span class="card__cost">1 500 руб.</span>
         </li>
         <li class="goods-set__item card">
           <div class="card__container">
             <img class="card__image" src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-            <a class="card__action card__action--cart button" href="#">В корзину</a>
-            <a class="card__action card__action--match button" href="#">Добавить к сравнению</a>
+            <div class="card__controls">
+              <a class="card__action button" href="#">В корзину</a>
+              <a class="card__action card__action--match" href="#">Добавить к сравнению</a>
+            </div>
           </div>
           <h3 class="card__name">Непотопляемая селфи-палка</h3>
-          <span class="card__cost">2500 руб.</span>
+          <span class="card__cost">2 500 руб.</span>
         </li>
         <li class="goods-set__item card">
-          <div class="card__container card__container--new">
+          <div class="card__container">
             <img class="card__image" src="img/item-4.jpg" alt="Селфи-палка &laquo;Следуй за мной&raquo;" width="360"
                  height="380">
-            <a class="card__action card__action--cart button" href="#">В корзину</a>
-            <a class="card__action card__action--match button" href="#">Добавить к сравнению</a>
+            <div class="card__controls">
+              <a class="card__action button" href="#">В корзину</a>
+              <a class="card__action card__action--match" href="#">Добавить к сравнению</a>
+            </div>
           </div>
           <h3 class="card__name">Селфи-палка &laquo;Следуй за мной&raquo;</h3>
-          <span class="card__cost">4900 руб.</span>
+          <span class="card__cost">4 900 руб.</span>
         </li>
       </ul>
-      <ul class="catalog__pagination pagination">
-        <li class="pagination__item"><a class="pagination__page pagination__page--prev" href="#">Назад</a></li>
-        <li class="pagination__item">
-          <span class="pagination__page pagination__page--active">1</span>
-        </li>
-        <li class="pagination__item"><a class="pagination__page" href="#">2</a></li>
-        <li class="pagination__item"><a class="pagination__page" href="#">3</a></li>
-        <li class="pagination__item"><a class="pagination__page pagination__page--next" href="#">Вперед</a></li>
-      </ul>
+      <div class="catalog__pagination pagination">
+        <div class="pagination__direction"><a class="pagination__page pagination__page--prev">Назад</a></div>
+        <ul class="pagination__pages">
+          <li class="pagination__item"><a class="pagination__page pagination__page--active">1</a></li>
+          <li class="pagination__item"><a class="pagination__page" href="#">2</a></li>
+          <li class="pagination__item"><a class="pagination__page" href="#">3</a></li>
+        </ul>
+        <div class="pagination__direction"><a class="pagination__page pagination__page--next" href="#">Вперед</a></div>
+      </div>
     </div>
   </section>
 </main>

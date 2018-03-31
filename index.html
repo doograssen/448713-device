@@ -49,7 +49,7 @@
                   <a class="category__link" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="category__item">
-                  <a class="category__link" href="#">Моноподы для селфи</a>
+                  <a class="category__link" href="catalog.html">Моноподы для селфи</a>
                 </li>
                 <li class="category__item">
                   <a class="category__link" href="#">Экшн-камеры</a>
@@ -304,21 +304,25 @@
       <li class="brands__item">
         <a class="brands__link" href="#">
           <img class="brands__logotype" src="img/logo-1.jpg" alt="logo-1" width="260" height="100">
+          <img class="brands__logotype" src="img/logo-1-hover.jpg" alt="logo-1" width="260" height="100">
         </a>
       </li>
       <li class="brands__item">
         <a class="brands__link" href="#">
           <img class="brands__logotype" src="img/logo-2.jpg" alt="logo-2" width="260" height="100">
+          <img class="brands__logotype" src="img/logo-2-hover.jpg" alt="logo-2" width="260" height="100">
         </a>
       </li>
       <li class="brands__item">
         <a class="brands__link" href="#">
           <img class="brands__logotype" src="img/logo-3.jpg" alt="logo-3" width="260" height="100">
+          <img class="brands__logotype" src="img/logo-3-hover.jpg" alt="logo-3" width="260" height="100">
         </a>
       </li>
       <li class="brands__item">
         <a class="brands__link" href="#">
           <img class="brands__logotype" src="img/logo-4.jpg" alt="logo-4" width="260" height="100">
+          <img class="brands__logotype" src="img/logo-4-hover.jpg" alt="logo-4" width="260" height="100">
         </a>
       </li>
     </ul>
@@ -341,8 +345,8 @@
       <h3 class="about__title">Контакты</h3>
       <p class="about__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
         работоспособность покупки. Всякое бывает.</p>
-      <a class="about__map" href="#"><img src="img/map.png" alt="Карта" width="560" height="222"></a>
-      <a class="about__link button" href="#">Напишите нам</a>
+      <a class="about__map" href="https://goo.gl/maps/nLPLNDPiEaD2"><img src="img/map.png" alt="Карта" width="560" height="222"></a>
+      <a class="about__link about__link--feedback button" href="#">Напишите нам</a>
     </div>
   </section>
 </main>
@@ -420,7 +424,7 @@
     </div>
   </div>
 </footer>
-<div class="modal" hidden="true">
+<div class="modal modal--feedback">
   <button class="modal__close invisible">Закрыть</button>
   <form class="modal__form feedback" action="https://echo.htmlacademy.ru" method="post">
     <p class="feedback__data">
@@ -429,21 +433,25 @@
     </p>
     <p class="feedback__data">
       <label class="feedback__label" for="e-mail">Ваш e-mail:</label>
-      <input class="feedback__input" type="text" id="e-mail" name="user-mail" placeholder="Для отправки ответа">
+      <input class="feedback__input feedback__input--invalid" type="text" id="e-mail" name="user-mail" placeholder="Для отправки ответа">
     </p>
     <p class="feedback__data feedback__data--wide">
       <label class="feedback__label" for="feedback">Текст письма:</label>
       <textarea class="feedback__text" id="feedback" name="user-feedback" cols="30" rows="10"
                 placeholder="В свободной форме"></textarea>
     </p>
-    <a class="feedback__submit button" href="#">Отправить</a>
+    <button type="submit" class="feedback__submit button" href="#">Отправить</button>
   </form>
 </div>
-<div class="modal" hidden="true">
+<div class="modal modal--map">
   <button class="modal__close invisible">Закрыть</button>
-  <a class="modal__map" href="#">
-    <img class="modal__link" src="img/map-big.jpg" width="960" height="559" alt="Карта">
+  <a class="modal__link" href="https://goo.gl/maps/nLPLNDPiEaD2">
+    <img class="modal__map" src="img/map-big.jpg" width="960" height="559" alt="Карта">
   </a>
+  <div class="modal__google-map"></div>
 </div>
+<script src="js/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVrlLcuNlh4wxGbAKMpMBkBaaI0mUdI0E&callback=initMap">
+</script>
 </body>
 </html>
