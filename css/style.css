@@ -604,6 +604,10 @@
   width: 200px;
 }
 
+input[disabled] + .filter__label {
+  opacity: 0.1;
+}
+
 .filter__section {
   position: relative;
   display: -webkit-box;
@@ -666,20 +670,18 @@
   background-repeat: no-repeat;
 }
 
-.filter__checkbox:focus + .filter__label,
-.filter__radio:focus + .filter__label {
-  outline: 2px solid #ffc600;
-}
-
-.filter__checkbox:checked + .filter__label:before {
+.filter__checkbox:checked + .filter__label:before,
+.filter__checkbox:not(:checked):active + .filter__label:before {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filter__checkbox:not(:checked) + .filter__label:before {
+.filter__checkbox:not(:checked) + .filter__label:before,
+.filter__checkbox:active + .filter__label:before {
   background-image: url("../img/checkbox-off.svg");
 }
 
-.filter__radio:checked + .filter__label:before {
+.filter__radio:checked + .filter__label:before,
+.filter__radio:not(:checked):active + .filter__label:before{
   width: 9px;
   height: 9px;
   top: 3px;
@@ -1117,7 +1119,7 @@
 }
 
 .slide--quad .slide__slogan {
-  width: auto;
+  width: 508px;
 }
 
 .slide--quad .slide__image {
@@ -1844,19 +1846,22 @@
 
 .modal {
   position: fixed;
-  top: 50%;
+  top: -50%;
   left: 50%;
-  display: none;
+  display: block;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  z-index: -1;
 }
 
 .modal--show {
-  display: block;
+  top: 50%;
+  z-index: 10;
+  transition-delay: 1s;
+  transition: z-index 0s, top 0.6s;
 }
 
 .modal__link img {
