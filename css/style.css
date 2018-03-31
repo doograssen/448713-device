@@ -870,6 +870,7 @@
 
 .card__image {
   display: block;
+  background-color: #e5e5e5;
 }
 
 .card__container:hover .card__image {
@@ -1436,7 +1437,7 @@
 
 /* ---- brands --- */
 .brands {
-  margin-bottom: 89px;
+  margin-bottom: 93px;
 }
 
 .brands__list {
@@ -1449,6 +1450,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.brands__link {
+  background-color: #e5e5e5;
+}
+
+.brands__logotype {
+  display: block;
 }
 
 .brands__logotype:nth-child(2) {
@@ -1555,7 +1564,12 @@
 .about__map {
   display: block;
   padding-top: 9px;
-  margin-bottom: 65px;
+  margin-bottom: 69px;
+}
+
+.about__map img{
+  display: block;
+  background-color: #e5e5e5;
 }
 
 /* ---- page-footer ---- */
@@ -1853,6 +1867,7 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  background-color: #e5e5e5;
 }
 
 .modal__close {
