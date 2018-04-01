@@ -1350,7 +1350,7 @@ input:focus + .filter__label {
 /* ---- services ---- */
 .services {
   width: auto;
-  min-width: 1160px;
+  min-width: 1200px;
   min-height: 388px;
   margin-bottom: 94px;
   background: -webkit-linear-gradient(white 100px, #e5e5e5 100px, #e5e5e5 100%);
