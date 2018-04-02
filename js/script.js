@@ -5,6 +5,7 @@ var showModalBtn = document.querySelector('.about__link--feedback');
 var showMap = document.querySelector('.about__map');
 var modal = document.querySelectorAll('.modal');
 var feedBack = document.querySelector('.modal--feedback');
+var fields = feedBack.querySelectorAll('input,textarea');
 var userName = feedBack.querySelector('[name="user-name"]');
 var email = feedBack.querySelector('[name="user-mail"]');
 var letter = feedBack.querySelector('[name="user-feedback"]');
@@ -37,14 +38,31 @@ function checkField(field) {
   }
 }
 
-function clearoOnClose() {
-  var errorFields = feedBack.querySelectorAll('input,textarea');
-  errorFields.forEach(function (item) {
+function checkForm() {
+  var check = false;
+  fields.forEach(function (item) {
+    check |= checkField(item);
+  });
+  return check;
+}
+function clearOnClose() {
+  fields.forEach(function (item) {
     item.classList.remove('feedback__error');
     item.value = '';
   });
   feedBack.classList.toggle('modal--show');
 }
+
+function addChangeListeners() {
+  fields.forEach(function (item) {
+    item.addEventListener('change', function () {
+      if (this.classList.contains('feedback__error')) {
+        this.classList.remove('feedback__error');
+      }
+    });
+  });
+}
+
 
 showModalBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -59,7 +77,7 @@ showMap.addEventListener('click', function (evt) {
   interactiveMap.classList.toggle('modal--show');
 });
 
-closeFeedbackBtn.addEventListener('click', clearoOnClose);
+closeFeedbackBtn.addEventListener('click', clearOnClose);
 
 closeMapBtn.addEventListener('click', function () {
   interactiveMap.classList.toggle('modal--show');
@@ -71,7 +89,7 @@ window.addEventListener('keydown', function (evt) {
     for (var i = 0; i < modalCount; i++) {
       if (modal[i].classList.contains('modal--show')) {
         if (modal[i].classList.contains('modal--feedback')) {
-          clearoOnClose();
+          clearOnClose();
           return;
         }
         modal[i].classList.remove('modal--show');
@@ -82,13 +100,15 @@ window.addEventListener('keydown', function (evt) {
 });
 
 feedBack.addEventListener('submit', function (evt) {
-  if (checkField(userName) || checkField(email) || checkField(letter)) {
+  if (checkForm()) {
     evt.preventDefault();
   } else {
     localStorage.setItem('userName', userName.value);
     localStorage.setItem('userEmail', email.value);
   }
 });
+
+addChangeListeners();
 
 mapLink.addEventListener('click', function (evt) {
   evt.preventDefault();
